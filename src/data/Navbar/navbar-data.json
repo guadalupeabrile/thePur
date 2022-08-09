@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Home",
+        "link": "/",
+        "colsTitle": "Home",
+        "itemsPerCol": 5,
+        "megaMenu": false,
+        "subMenu": []
+    },
+    {
+        "id": 2,
+        "title": "Blog",
+        "link": "/",
+        "colsTitle": "Blog",
+        "itemsPerCol": 5,
+        "megaMenu": false,
+        "subMenu": []
+    }
+]
