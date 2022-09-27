@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Loader from "../../components/Loader/Loader";
 import useBodyClass from "../../helpers/useBodyClass";
 import PageTitleBlog from "../../components/PageTitle/PageTitleBlog";
@@ -6,6 +6,7 @@ import BlogContent from "../../components/Blog/BlogContent";
 import FooterOne from "../../components/Footer/FooterOne";
 import HeaderFour from "../../components/Header/HeaderFour";
 import { useHistory } from "react-router-dom";
+
 
 const BlogMasonry = () => {
   useBodyClass("wrap-nav-sidebar");
@@ -22,7 +23,7 @@ const BlogMasonry = () => {
         history.push('/home');
         break;
       case "products":
-        history.push('/products');
+        history.push('/home/products');
         break;
       // case "contact":
       //   contact.current.scrollIntoView({ behavior: "smooth" });

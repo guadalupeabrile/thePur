@@ -1,9 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import FsLightbox from "fslightbox-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Loader from "./../../components/Loader/Loader";
 import useBodyClass from "../../helpers/useBodyClass";
 import HeaderFour from "../../components/Header/HeaderFour";
 import HeroSliderOne from "../../components/Hero/HeroSliderOne";
+import WhoWeAreTwo from "../../components/WhoWeAre/WhoWeAreTwo";
 import WhoWeAreFour from "../../components/WhoWeAre/WhoWeAreFour";
+import OurTeamTwo from "../../components/Team/OurTeamTwo";
+import TestimonialsOne from "../../components/Testimonials/TestimonialsOne";
 import Resume from "../../components/Resume/Resume";
 import ContactTwo from "../../components/ContactUs/ContactTwo";
 import FooterTwo from "../../components/Footer/FooterTwo";
@@ -14,8 +20,13 @@ import { useHistory } from "react-router-dom";
 
 const PersonalResume = () => {
   useBodyClass("wrap-nav-sidebar");
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   const home = useRef();
   const products = useRef();
+  const team = useRef();
   // const contact = useRef();
   // const suscribe = useRef();
   const history = useHistory();
@@ -24,6 +35,9 @@ const PersonalResume = () => {
     e.preventDefault();
     switch (content) {
       case "home":
+        home.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "team":
         home.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "products":
@@ -49,6 +63,11 @@ const PersonalResume = () => {
     <Loader>
       <HeaderFour scrollToSection={scrollToSection} />
       <HeroSliderOne ref={home} scrollToSection={scrollToSection} />
+      <OurTeamTwo
+        title="MEET OUR TEAM"
+        tagline="WE ARE PUR"
+        ref={team}
+      />
       <Portfolio
         columns="3"
         layout="wide"
@@ -57,10 +76,11 @@ const PersonalResume = () => {
         classAppend="pt-0"
         ref={products}
       />
+      <TestimonialsOne title="Testimonials" tagline="Happy clients" />
       {/* <ContactTwo ref={contact} classAppend="mt-0" />
       <SubscribeApp ref={suscribe} /> */}
 
-    </Loader>
+    </Loader >
   );
 };
 

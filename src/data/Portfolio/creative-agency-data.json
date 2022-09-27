@@ -90,51 +90,6 @@
   },
   {
     "id": 6,
-    "title": "Yoga Online",
-    "category": "YOGA",
-    "image": "portfolio/grid/yoga-2.jpeg",
-    "groups": [
-      "all",
-      "yoga"
-    ],
-    "links": [
-      {
-        "id": 1,
-        "icon": "search-1",
-        "link": "!#"
-      },
-      {
-        "id": 2,
-        "icon": "link-alt",
-        "link": "!#"
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Flyer Design",
-    "category": "BRANDING",
-    "image": "portfolio/grid/7.jpg",
-    "groups": [
-      "all",
-      "design",
-      "branding"
-    ],
-    "links": [
-      {
-        "id": 1,
-        "icon": "search-1",
-        "link": "!#"
-      },
-      {
-        "id": 2,
-        "icon": "link-alt",
-        "link": "!#"
-      }
-    ]
-  },
-  {
-    "id": 8,
     "title": "Mate Clásico",
     "category": "MATE",
     "image": "portfolio/grid/mate-2.JPG",

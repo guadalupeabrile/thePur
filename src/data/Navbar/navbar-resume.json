@@ -5,12 +5,17 @@
     "link": "home"
   },
   {
-    "id": 4,
+    "id": 2,
+    "title": "Our Team",
+    "link": "team"
+  },
+  {
+    "id": 3,
     "title": "Productos & Servicios",
     "link": "products"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Blog",
     "link": "blog"
   }

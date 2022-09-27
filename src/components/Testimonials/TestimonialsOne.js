@@ -5,8 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import HeadingSection from "../HeadingSection/HeadingSection";
 import TestimonialItem from "./TestimonialItem";
 import testimonialsData from "../../data/Testimonials/testimonials-data.json";
+import useBodyClass from "../../helpers/useBodyClass";
+
 
 const TestimonialsOne = ({ title, tagline, font }) => {
+  useBodyClass("wrap-nav-sidebar");
   const settings = {
     dots: true,
     centerMode: true,
