@@ -15,6 +15,7 @@ import ContactTwo from "../../components/ContactUs/ContactTwo";
 import FooterTwo from "../../components/Footer/FooterTwo";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import SubscribeApp from "../../components/Subscribe/AppStyle/SubscribeApp";
+import BlogSlider from "../../components/Blog/BlogSlider";
 import { useHistory } from "react-router-dom";
 import BlogCarousel from "../blog/BlogCarousel";
 
@@ -83,7 +84,7 @@ const PersonalResume = () => {
         ref={products}
       />
 
-      <BlogCarousel
+      <BlogSlider
         ref={blog}
       />
 

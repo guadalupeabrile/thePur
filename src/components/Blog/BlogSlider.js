@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Slider from "react-slick";
 import parse from "html-react-parser";
 import dataBlog from "../../data/Blog/blog-data.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
 
-const BlogSlider = () => {
+const BlogSlider = forwardRef((props, ref) => {
   const settings = {
     autoplay: true,
     dots: true,
@@ -32,17 +32,11 @@ const BlogSlider = () => {
   };
 
   return (
-    <section>
-      <div className="dn-bg-lines">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <section id="blog" ref={ref}
+    >
       <div className="container">
         <div className="row">
-          <HeadingSection title="Our Blogs" tagline="Latest News" />
+          <HeadingSection title="THE PUR BLOG" tagline="Latest News" />
         </div>
         <div className="row mt-50">
           <div className="col-md-12 remove-padding">
@@ -58,11 +52,11 @@ const BlogSlider = () => {
                   </div>
                   <div className="post-info">
                     <h3>
-                      <a href={`${process.env.PUBLIC_URL}/blog-grid`}>{post.title}</a>
+                      <a href={`${process.env.PUBLIC_URL}/blog/:blogID`}>{post.title}</a>
                     </h3>
                     <h6>{post.published}</h6>
                     <p>{parse(post.excerpt)}</p>
-                    <a className="readmore" href="!#">
+                    <a className="readmore" href={`${process.env.PUBLIC_URL}/blog/:blogID`}>
                       <span>Read More</span>
                     </a>
                   </div>
@@ -74,6 +68,7 @@ const BlogSlider = () => {
       </div>
     </section>
   );
-};
+}
+);
 
 export default BlogSlider;
