@@ -45,7 +45,7 @@ const HeaderFour = ({ scrollToSection }) => {
             aria-expanded="false"
           >
             <Scrollspy
-              items={["home", "blog", "products", "team"]} // Agregar a futuro "login", "contact", "suscribe"
+              items={["home", "team", "products", "blog", "testimonials"]} // Agregar a futuro "login", "contact", "suscribe"
               currentClassName="active"
               className="nav navbar-nav navbar-right"
               data-in="fadeInLeft"

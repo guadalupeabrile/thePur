@@ -16,6 +16,7 @@ import FooterTwo from "../../components/Footer/FooterTwo";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import SubscribeApp from "../../components/Subscribe/AppStyle/SubscribeApp";
 import { useHistory } from "react-router-dom";
+import BlogCarousel from "../blog/BlogCarousel";
 
 
 const PersonalResume = () => {
@@ -27,6 +28,8 @@ const PersonalResume = () => {
   const home = useRef();
   const products = useRef();
   const team = useRef();
+  const testimonials = useRef();
+  const blog = useRef();
   // const contact = useRef();
   // const suscribe = useRef();
   const history = useHistory();
@@ -38,10 +41,13 @@ const PersonalResume = () => {
         home.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "team":
-        home.current.scrollIntoView({ behavior: "smooth" });
+        team.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "products":
         products.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "testimonials":
+        testimonials.current.scrollIntoView({ behavior: "smooth" });
         break;
       // case "contact":
       //   contact.current.scrollIntoView({ behavior: "smooth" });
@@ -50,7 +56,7 @@ const PersonalResume = () => {
       //   suscribe.current.scrollIntoView({ behavior: "smooth" });
       //   break;
       case "blog":
-        history.push('/blog');
+        blog.current.scrollIntoView({ behavior: "smooth" });
         break;
       // case "login":
       //   history.push('/login');
@@ -76,7 +82,16 @@ const PersonalResume = () => {
         classAppend="pt-0"
         ref={products}
       />
-      <TestimonialsOne title="Testimonials" tagline="Happy clients" />
+
+      <BlogCarousel
+        ref={blog}
+      />
+
+      <TestimonialsOne
+        title="Testimonials"
+        tagline="Happy clients"
+        ref={testimonials}
+      />
       {/* <ContactTwo ref={contact} classAppend="mt-0" />
       <SubscribeApp ref={suscribe} /> */}
 

@@ -18,5 +18,10 @@
     "id": 4,
     "title": "Blog",
     "link": "blog"
+  },
+  {
+    "id": 5,
+    "title": "Testimonials",
+    "link": "testimonials"
   }
 ]
