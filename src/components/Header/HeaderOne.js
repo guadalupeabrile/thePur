@@ -6,7 +6,7 @@ import AttributeNav from "../Navs/AttributeNav";
 import MainLogo from "../MainLogo";
 import CartSearchTop from "../Navs/CartSearchTop";
 
-const HeaderOne = ({ type }) => {
+function HeaderOne({ type }) {
   const [fixed, setFixed] = useState(false);
   const [collapse, setCollapse] = useState(false);
 
@@ -35,9 +35,7 @@ const HeaderOne = ({ type }) => {
   return (
     <>
       <nav
-        className={
-          "navbar navbar-expand-lg navbar-light navbar-fixed white bootsnav on no-full fixed "
-        }
+        className={"navbar navbar-expand-lg navbar-light navbar-fixed white bootsnav on no-full fixed "}
       >
         <div className="container">
           <button
@@ -55,6 +53,6 @@ const HeaderOne = ({ type }) => {
       </nav>
     </>
   );
-};
+}
 
 export default HeaderOne;

@@ -49,15 +49,15 @@ const PersonalResume = () => {
       case "testimonials":
         testimonials.current.scrollIntoView({ behavior: "smooth" });
         break;
+      case "blog":
+        blog.current.scrollIntoView({ behavior: "smooth" });
+        break;
       // case "contact":
       //   contact.current.scrollIntoView({ behavior: "smooth" });
       //   break;
       // case "suscribe":
       //   suscribe.current.scrollIntoView({ behavior: "smooth" });
       //   break;
-      case "blog":
-        blog.current.scrollIntoView({ behavior: "smooth" });
-        break;
       // case "login":
       //   history.push('/login');
       //   break;

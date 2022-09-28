@@ -105,10 +105,6 @@ function App() {
             path={`${process.env.PUBLIC_URL}/blog/:blogID`}
             component={BlogStandard}
           />
-          <Route
-            path={`${process.env.PUBLIC_URL}/blog`}
-            component={BlogMasonry}
-          />
           {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/login`}
