@@ -41,7 +41,9 @@ const BlogSlider = forwardRef((props, ref) => {
         <div className="row mt-50">
           <div className="col-md-12 remove-padding">
             <Slider {...settings}>
+
               {dataBlog.map((post) => (
+
                 <div className="post" key={post.id}>
                   <div className="post-img">
                     <img
@@ -52,11 +54,14 @@ const BlogSlider = forwardRef((props, ref) => {
                   </div>
                   <div className="post-info">
                     <h3>
-                      <a href={`${process.env.PUBLIC_URL}/blog/:blogID`}>{post.title}</a>
+                      <a href={`${process.env.PUBLIC_URL + `/blog/${post.title
+                        .replace(/\//g, "-")
+                        .replace(/\s/g, "-")
+                        .toLocaleLowerCase()}?id=${post.id}`}`}>{post.title} </a >
                     </h3>
                     <h6>{post.published}</h6>
                     <p>{parse(post.excerpt)}</p>
-                    <a className="readmore" href={`${process.env.PUBLIC_URL}/blog/:blogID`}>
+                    <a className="readmore" href={`${process.env.PUBLIC_URL + '/blog/' + post.id}`}>
                       <span>Read More</span>
                     </a>
                   </div>
