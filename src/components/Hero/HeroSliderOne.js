@@ -34,10 +34,11 @@ const HeroSliderOne = forwardRef((props, ref) => {
               >
 
                 <p className="text-center mt-30">
-                  <a href={process.env.PUBLIC_URL + "products"}
+                  <a
                     onClick={(e) => props.scrollToSection(e, "products")}
                     className="btn btn-outline-white btn-circle">Productos & Servicios</a>
-                  <a href={process.env.PUBLIC_URL + "blog"}
+                  <a
+                    onClick={(e) => props.scrollToSection(e, "blog")}
                     className="btn btn-login btn-circle">Nuestro Blog</a>
                 </p>
 
