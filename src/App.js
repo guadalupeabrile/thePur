@@ -100,11 +100,6 @@ function App() {
     <Router basename={"/"}>
       <ScrollToTop>
         <Switch>
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/blog/:blogID`}
-            component={BlogStandard}
-          />
           {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/login`}

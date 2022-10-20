@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import dataBlog from "../../data/Blog/blog-data.json";
 import dataSocial from "../../data/Social/social-data.json";
 import Loader from "../../components/Loader/Loader";
@@ -17,40 +17,9 @@ const BlogStandard = ({ sidebar }) => {
   const featuredPost = dataBlog.find((post) => post.id === 1);
 
   useBodyClass("wrap-nav-sidebar");
-  const home = useRef();
-  const products = useRef();
-  // const contact = useRef();
-  // const suscribe = useRef();
-  const history = useHistory();
-
-  const scrollToSection = (e, content) => {
-    e.preventDefault();
-    switch (content) {
-      case "home":
-        history.push('/home');
-        break;
-      case "products":
-        history.push('/products');
-        break;
-      // case "contact":
-      //   contact.current.scrollIntoView({ behavior: "smooth" });
-      //   break;
-      // case "suscribe":
-      //   suscribe.current.scrollIntoView({ behavior: "smooth" });
-      //   break;
-      case "blog":
-        history.push('/blog');
-        break;
-      // case "login":
-      //   history.push('/login');
-      //   break;
-      default:
-    }
-  };
 
   return (
     <Loader>
-      <HeaderFour scrollToSection={scrollToSection} />
       <PageTitleBlog title={post.title} tagline={post.published} />
       <section className="post-info">
         <div className="container">
