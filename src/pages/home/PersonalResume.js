@@ -40,23 +40,18 @@ const PersonalResume = () => {
     e.preventDefault();
     switch (content) {
       case "home":
-        history.push('/home')
         home.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "team":
-        history.push('/')
         team.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "products":
-        history.push('/')
         products.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "testimonials":
-        history.push('/')
         testimonials.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "blog":
-        history.push('/')
         blog.current.scrollIntoView({ behavior: "smooth" });
         break;
       // case "contact":
@@ -75,43 +70,32 @@ const PersonalResume = () => {
   return (
     <Loader>
       <HeaderFour scrollToSection={scrollToSection} />
+      <HeroSliderOne ref={home} scrollToSection={scrollToSection} />
+      <OurTeamTwo
+        title="MEET OUR TEAM"
+        tagline="WE ARE PUR"
+        ref={team}
+      />
+      <Portfolio
+        columns="3"
+        layout="wide"
+        filter="true"
+        items="6"
+        classAppend="pt-0"
+        ref={products}
+      />
 
-      <Switch>
-        <Route
-          exact path={`${process.env.PUBLIC_URL}/blog/:blogID`}
-          component={BlogStandard}>
-          <BlogStandard
-          />
-        </Route>
-        <Route exact path={`${process.env.PUBLIC_URL}`}>
-          <HeroSliderOne ref={home} scrollToSection={scrollToSection} />
-          <OurTeamTwo
-            title="MEET OUR TEAM"
-            tagline="WE ARE PUR"
-            ref={team}
-          />
-          <Portfolio
-            columns="3"
-            layout="wide"
-            filter="true"
-            items="6"
-            classAppend="pt-0"
-            ref={products}
-          />
+      <BlogSlider
+        ref={blog}
+      />
 
-          <BlogSlider
-            ref={blog}
-          />
-
-          <TestimonialsOne
-            title="Testimonials"
-            tagline="Happy clients"
-            ref={testimonials}
-          />
-          {/* <ContactTwo ref={contact} classAppend="mt-0" />
+      <TestimonialsOne
+        title="Testimonials"
+        tagline="Happy clients"
+        ref={testimonials}
+      />
+      {/* <ContactTwo ref={contact} classAppend="mt-0" />
           <SubscribeApp ref={suscribe} /> */}
-        </Route>
-      </Switch>
 
     </Loader >
   );

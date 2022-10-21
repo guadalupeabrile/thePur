@@ -3,12 +3,12 @@ import { useHistory } from "react-router-dom";
 import Icofont from "react-icofont";
 import Scrollspy from "react-scrollspy";
 import useWindowSize from "../../helpers/GetWindowSize";
-import dataNavbar from "../../data/Navbar/navbar-resume.json";
+import dataNavbarBlog from "../../data/Navbar/navbar-resume-blog.json";
 import dataSocial from "../../data/Social/social-data.json";
 import MainLogoTwo from "../../elements/Logo/MainLogoTwo";
 import SocialItem from "../../elements/SocialItem";
 
-const HeaderFour = ({ scrollToSection }) => {
+const HeaderFourBlog = () => {
   const size = useWindowSize();
   const [collapse, setCollapse] = useState(false);
 
@@ -46,28 +46,22 @@ const HeaderFour = ({ scrollToSection }) => {
             aria-expanded="false"
           >
             <Scrollspy
-              items={["home", "team", "products", "blog", "testimonials"]} // Agregar a futuro "login", "contact", "suscribe"
+              items={["home"]}
               currentClassName="active"
               className="nav navbar-nav navbar-right"
               data-in="fadeInLeft"
             >
-              {dataNavbar.map((item, i) => (
+              {dataNavbarBlog.map((item, i) => (
                 <li key={item.id} >
                   <a
-                    href={process.env.PUBLIC_URL + item.link}
-                    onClick={(e) => scrollToSection(e, item.link)}
+                    href={`${process.env.PUBLIC_URL}` + '/'}
                   >
                     <i className="fa fa-home"></i> {item.title}
                   </a>
                 </li>
               ))}
             </Scrollspy>
-            <ul className="social-media-dark">
-              <a
-                href={'https://www.instagram.com/thepurlife_/?hl=es-la'} target="_blank">
-                <i class="icofont-instagram icofont-lg"></i>
-              </a>
-            </ul>
+
           </div>
         </div>
       </div>
@@ -75,4 +69,4 @@ const HeaderFour = ({ scrollToSection }) => {
   );
 };
 
-export default HeaderFour;
+export default HeaderFourBlog;

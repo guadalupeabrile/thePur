@@ -4,7 +4,7 @@ import dataSocial from "../../data/Social/social-data.json";
 import Loader from "../../components/Loader/Loader";
 import useBodyClass from "../../helpers/useBodyClass";
 import HeaderOne from "../../components/Header/HeaderOne";
-import HeaderFour from "../../components/Header/HeaderFour";
+import HeaderFourBlog from "../../components/Header/HeaderFourBlog";
 import { useHistory } from "react-router-dom";
 import PageTitleBlog from "../../components/PageTitle/PageTitleBlog";
 import SidebarForBlog from "../../components/Sidebar/SidebarForBlog";
@@ -20,6 +20,7 @@ const BlogStandard = ({ sidebar }) => {
 
   return (
     <Loader>
+      <HeaderFourBlog />
       <PageTitleBlog title={post.title} tagline={post.published} />
       <section className="post-info">
         <div className="container">

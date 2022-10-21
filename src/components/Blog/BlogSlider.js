@@ -1,8 +1,11 @@
 import React, { forwardRef } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Slider from "react-slick";
 import parse from "html-react-parser";
 import dataBlog from "../../data/Blog/blog-data.json";
 import HeadingSection from "../HeadingSection/HeadingSection";
+import BlogStandard from "../../pages/blog/BlogStandard";
+import { Container } from "react-bootstrap";
 
 const BlogSlider = forwardRef((props, ref) => {
   const settings = {
@@ -61,7 +64,10 @@ const BlogSlider = forwardRef((props, ref) => {
                     </h3>
                     <h6>{post.published}</h6>
                     <p>{parse(post.excerpt)}</p>
-                    <a className="readmore" href={`${process.env.PUBLIC_URL + '/blog/' + post.id}`}>
+                    <a className="readmore" href={`${process.env.PUBLIC_URL + `/blog/${post.title
+                      .replace(/\//g, "-")
+                      .replace(/\s/g, "-")
+                      .toLocaleLowerCase()}?id=${post.id}`}`}>
                       <span>Read More</span>
                     </a>
                   </div>
@@ -72,6 +78,7 @@ const BlogSlider = forwardRef((props, ref) => {
         </div>
       </div>
     </section>
+
   );
 }
 );
