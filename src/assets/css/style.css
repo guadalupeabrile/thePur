@@ -9,8 +9,8 @@
    Secondary color is used for some hover on buttons.
 */
 :root {
-  --main-color: #c7d39e;
-  --secondary-color: #c7c5e0;
+  --main-color: #272727bb;
+  --secondary-color: #090909;
 }
 
 .dropdown-menu {
@@ -287,14 +287,14 @@ a.isDisabled:focus {
   height: 500px;
 }
 
-.sliders-page .slick-slide > div,
-.sliders-page .slick-slide > div > div {
+.sliders-page .slick-slide>div,
+.sliders-page .slick-slide>div>div {
   height: 100%;
 }
 
 /* Tabs */
 
-.icon-tabs .nav-tabs > li > span {
+.icon-tabs .nav-tabs>li>span {
   margin-right: 0;
   font-size: 16px;
   line-height: 25px;
@@ -311,7 +311,7 @@ a.isDisabled:focus {
   cursor: pointer;
 }
 
-.icon-tabs .nav-tabs > li > span i {
+.icon-tabs .nav-tabs>li>span i {
   display: block;
   font-size: 30px;
   margin-bottom: 20px;
@@ -321,7 +321,7 @@ a.isDisabled:focus {
   color: var(--main-color) !important;
 }
 
-.light-tabs .nav-tabs > li > span {
+.light-tabs .nav-tabs>li>span {
   margin-right: 0;
   font-size: 14px;
   line-height: 25px;
@@ -337,7 +337,7 @@ a.isDisabled:focus {
   cursor: pointer;
 }
 
-.light-tabs .nav-tabs > li.react-tabs__tab--selected > span::before {
+.light-tabs .nav-tabs>li.react-tabs__tab--selected>span::before {
   content: "";
   background-color: var(--main-color);
   width: 100%;
@@ -378,18 +378,18 @@ a.isDisabled:focus {
 }
 
 /* Accordions */
-.accordion-color > .rc-collapse-item > .rc-collapse-header:focus,
-.accordion-color > .rc-collapse-item > .rc-collapse-header:active,
-.accordion-style-01 > .rc-collapse-item > .rc-collapse-header:focus,
-.accordion-style-01 > .rc-collapse-item > .rc-collapse-header:active {
+.accordion-color>.rc-collapse-item>.rc-collapse-header:focus,
+.accordion-color>.rc-collapse-item>.rc-collapse-header:active,
+.accordion-style-01>.rc-collapse-item>.rc-collapse-header:focus,
+.accordion-style-01>.rc-collapse-item>.rc-collapse-header:active {
   outline: 0;
   border: none;
   outline-style: none;
   -moz-outline-style: none;
 }
 
-.accordion-transparent > .rc-collapse-item > .rc-collapse-header:focus,
-.accordion-transparent > .rc-collapse-item > .rc-collapse-header:active {
+.accordion-transparent>.rc-collapse-item>.rc-collapse-header:focus,
+.accordion-transparent>.rc-collapse-item>.rc-collapse-header:active {
   outline: 0;
   outline-style: none;
   -moz-outline-style: none;
@@ -426,17 +426,17 @@ a.isDisabled:focus {
   padding: 22px 15px 22px 80px !important;
 }
 
-.accordion-color > .rc-collapse-item {
+.accordion-color>.rc-collapse-item {
   border-top: 0 !important;
 }
 
-.accordion-color > .rc-collapse-item > .rc-collapse-header .arrow,
-.accordion-transparent > .rc-collapse-item > .rc-collapse-header .arrow,
-.accordion-style-01 > .rc-collapse-item > .rc-collapse-header .arrow {
+.accordion-color>.rc-collapse-item>.rc-collapse-header .arrow,
+.accordion-transparent>.rc-collapse-item>.rc-collapse-header .arrow,
+.accordion-style-01>.rc-collapse-item>.rc-collapse-header .arrow {
   display: none !important;
 }
 
-.accordion-color > .rc-collapse-item > .rc-collapse-header {
+.accordion-color>.rc-collapse-item>.rc-collapse-header {
   color: #212121 !important;
   background-color: #fff;
   border-color: #f1f1f1;
@@ -481,7 +481,7 @@ a.isDisabled:focus {
   left: 0;
 }
 
-.accordion-color .rc-collapse-content > .rc-collapse-content-box {
+.accordion-color .rc-collapse-content>.rc-collapse-content-box {
   padding: 15px;
   margin: 0;
 }
@@ -494,7 +494,7 @@ a.isDisabled:focus {
   border-right: 1px solid var(--main-color);
 }
 
-.accordion-transparent .rc-collapse-content > .rc-collapse-content-box {
+.accordion-transparent .rc-collapse-content>.rc-collapse-content-box {
   padding: 15px;
   margin: 0;
 }
@@ -562,7 +562,7 @@ a.isDisabled:focus {
 
 /* Login form */
 
-#signup-tabs > li.react-tabs__tab--selected > a {
+#signup-tabs>li.react-tabs__tab--selected>a {
   background-color: var(--main-color);
   border: 1px solid var(--main-color);
   color: #fff;
@@ -600,6 +600,7 @@ a.isDisabled:focus {
     left: -7px;
     top: 10px;
   }
+
   .navbar .sub-menu:after {
     border-top: 6px solid transparent;
   }

@@ -202,7 +202,7 @@ a:focus,
 a:active {
   outline: none;
   text-decoration: none;
-  color: #e91e63;
+  color: #c7c5e0;
 }
 
 ul {
@@ -5658,7 +5658,8 @@ ul.footer-gallery li img {
 }
 
 .btn-login {
-  background-color: var(--main-color)
+  background-color: var(--main-color);
+  color: white
 }
 
 .btn-login:hover {
@@ -6981,7 +6982,7 @@ form.register {
 }
 
 .app-form .form-control:focus {
-  border-color: #f44336;
+  border-color: #c7c5e0;
 }
 
 
