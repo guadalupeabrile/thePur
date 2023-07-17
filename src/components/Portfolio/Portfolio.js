@@ -5,9 +5,10 @@ import PortfolioItem from "./PortfolioItem";
 import Shuffle from "shufflejs";
 import "react-image-lightbox/style.css";
 import Lightbox from "react-image-lightbox";
+import HeadingSection from '../HeadingSection/HeadingSection';
 
 const Portfolio = forwardRef(
-  ({ filter, layout, columns, space, items, classAppend, children }, ref) => {
+  ({ filter, layout, columns, space, items, classAppend, children, title, tagline }, ref) => {
     const categories = ["all", "yerbas", "mates", "cocina"]; //add yoga
     const element = useRef();
     const [shuffle, setShuffle] = useState();
@@ -49,17 +50,15 @@ const Portfolio = forwardRef(
 
     return (
       <section
-        className={"pb-5 " + (classAppend ? classAppend : "")}
+        className={"pb-5" + (classAppend ? classAppend : "")}
         id="products"
         ref={ref}
       >
-        {children ? (
-          <div className="container">
-            <div className="row">{children}</div>
-          </div>
-        ) : null}
         <div className={"container" + (layout === "wide" ? "-fluid" : "")}>
           <div className="row">
+            <HeadingSection title={title} tagline={tagline}>
+              {children}
+            </HeadingSection>
             <div className={"container" + (layout === "wide" ? "-fluid" : "") + " text-center"}>
               {filter === "true" ? (
                 <PortfolioFilter

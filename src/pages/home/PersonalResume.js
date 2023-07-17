@@ -81,11 +81,13 @@ const PersonalResume = () => {
       ></Welcome>
       <OurServicesTwo />
       <Portfolio
+        title="Productos y Servicos"
+        tagline="Un Boost para tu vida o proyecto"
         columns="3"
         layout="wide"
         filter="true"
         items="6"
-        classAppend="pt-0"
+        classAppend="pt-5"
         ref={products}
       />
 
