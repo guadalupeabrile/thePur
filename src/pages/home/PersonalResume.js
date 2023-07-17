@@ -16,6 +16,7 @@ import OurTeamTwo from "../../components/Team/OurTeamTwo";
 import TestimonialsOne from "../../components/Testimonials/TestimonialsOne";
 import Resume from "../../components/Resume/Resume";
 import ContactTwo from "../../components/ContactUs/ContactTwo";
+import ContactFormArquitectur from "../../components/ContactUs/ContactArchitecture";
 import FooterTwo from "../../components/Footer/FooterTwo";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import SubscribeApp from "../../components/Subscribe/AppStyle/SubscribeApp";
@@ -34,7 +35,7 @@ const PersonalResume = () => {
   const sobreMi = useRef();
   const testimonials = useRef();
   const blog = useRef();
-  // const contact = useRef();
+  const contact = useRef();
   // const suscribe = useRef();
   const history = useHistory();
 
@@ -56,9 +57,9 @@ const PersonalResume = () => {
       case "blog":
         blog.current.scrollIntoView({ behavior: "smooth" });
         break;
-      // case "contact":
-      //   contact.current.scrollIntoView({ behavior: "smooth" });
-      //   break;
+      case "contact":
+        contact.current.scrollIntoView({ behavior: "smooth" });
+        break;
       // case "suscribe":
       //   suscribe.current.scrollIntoView({ behavior: "smooth" });
       //   break;
@@ -100,8 +101,11 @@ const PersonalResume = () => {
         tagline="Happy clients"
         ref={testimonials}
       />
-      {/* <ContactTwo ref={contact} classAppend="mt-0" />
-          <SubscribeApp ref={suscribe} /> */}
+      <ContactTwo
+        title="Contáctame!"
+        ref={contact}
+        classAppend="mt-0" />
+      {/* <SubscribeApp ref={suscribe} />  */}
 
     </Loader >
   );

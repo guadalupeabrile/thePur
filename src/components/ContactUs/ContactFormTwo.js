@@ -24,12 +24,12 @@ const ContactFormTwo = ({ title }) => {
           className="form-control"
           id="name"
           required="required"
-          placeholder="Your Name"
-          data-error="Your Name is Required"
+          placeholder="Tu Name"
+          data-error="Requerimos tu nombre"
           value={inputs.name}
           onChange={handleInputChange}
         />
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">Nombre</label>
         <div className="help-block with-errors mt-20"></div>
       </div>
       <div className="form-floating">
@@ -38,9 +38,9 @@ const ContactFormTwo = ({ title }) => {
           name="email"
           className="form-control"
           id="email"
-          placeholder="Your Email"
+          placeholder="Tu Email"
           required="required"
-          data-error="Please Enter Valid Email"
+          data-error="Por favor ingresa un Email válido"
           value={inputs.email}
           onChange={handleInputChange}
         />
@@ -53,13 +53,13 @@ const ContactFormTwo = ({ title }) => {
           className="form-control"
           id="message"
           rows="7"
-          placeholder="Your Message"
+          placeholder="Tu Mensaje"
           required
-          data-error="Please, Leave us a message"
+          data-error="Por favor, déjanos un mensaje"
           value={inputs.message}
           onChange={handleInputChange}
         ></textarea>
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message">Mensaje</label>
         <div className="help-block with-errors mt-20"></div>
       </div>
       <p className="text-center">
@@ -68,7 +68,7 @@ const ContactFormTwo = ({ title }) => {
           name="submit"
           className="btn btn-color btn-circle"
         >
-          Send Request
+          Enviar Mensaje
         </button>
       </p>
     </form>
