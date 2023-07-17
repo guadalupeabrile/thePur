@@ -6,7 +6,7 @@ const ContactFormTwo = ({ title }) => {
 
   const form = useRef();
   const [inputs, setInputs] = useState({});
-  const [statusMessage, setStatusMessage] = useState("Sending...");
+  const [statusMessage, setStatusMessage] = useState("Enviando...");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -105,8 +105,9 @@ const ContactFormTwo = ({ title }) => {
               Enviar Mensaje
             </button>
           }
+          position="right center"
         >
-          <div position="center">
+          <div>
             {statusMessage}
           </div>
         </Popup>
