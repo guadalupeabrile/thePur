@@ -1,20 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Popup from 'reactjs-popup';
 
 const ContactFormTwo = ({ title }) => {
+
+  const form = useRef();
   const [inputs, setInputs] = useState({});
+  const [statusMessage, setStatusMessage] = useState("Sending...");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setInputs({ ...inputs, [name]: value });
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ey18hlh', 'template_7t834mq', e.target, 'gH8gPEVte3skgnXsY')
+      .then((result) => {
+        console.log(result.text);
+        if (inputs.name != "" && inputs.email != "" && inputs.message != "") {
+          setStatusMessage("Gracias por contactarte!");
+        }
+        setInputs({
+          name: "",
+          email: "",
+          message: "",
+        });
+      }, (error) => {
+        console.log(error.text);
+        setStatusMessage(`${error.text} happened`);
+      });
+
+  };
+
   return (
     <form
       name="contact-form"
-      className="contact-me"
       id="contact-form"
-      action="php/contact.php"
-      method="POST"
+      ref={form}
+      className="app-form"
+      onSubmit={sendEmail}
     >
       <div className="messages"></div>
       <div className="form-floating">
@@ -62,15 +88,20 @@ const ContactFormTwo = ({ title }) => {
         <label htmlFor="message">Mensaje</label>
         <div className="help-block with-errors mt-20"></div>
       </div>
-      <p className="text-center">
-        <button
-          type="submit"
-          name="submit"
-          className="btn btn-color btn-circle"
-        >
-          Enviar Mensaje
-        </button>
-      </p>
+      <Popup
+        trigger={
+          <button
+            type="submit"
+            name="submit"
+            className="btn btn-color btn-circle"
+            value="Send"
+          >
+            Send Message
+          </button>
+        }
+        position="right center">
+        {statusMessage}
+      </Popup>
     </form>
   );
 };
