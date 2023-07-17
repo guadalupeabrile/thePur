@@ -9,7 +9,7 @@ import HeadingSection from '../HeadingSection/HeadingSection';
 
 const Portfolio = forwardRef(
   ({ filter, layout, columns, space, items, classAppend, children, title, tagline }, ref) => {
-    const categories = ["all", "yerbas", "mates", "cocina"]; //add yoga
+    const categories = ["all", "experiencias", "shop", "postcad", "coaching", "dj"]; //add yoga
     const element = useRef();
     const [shuffle, setShuffle] = useState();
 
