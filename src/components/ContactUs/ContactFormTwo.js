@@ -88,20 +88,29 @@ const ContactFormTwo = ({ title }) => {
         <label htmlFor="message">Mensaje</label>
         <div className="help-block with-errors mt-20"></div>
       </div>
-      <Popup
-        trigger={
-          <button
-            type="submit"
-            name="submit"
-            className="btn btn-color btn-circle"
-            value="Send"
-          >
-            Send Message
-          </button>
-        }
-        position="right center">
-        {statusMessage}
-      </Popup>
+      <div
+        className="text-center"
+        data-aos={"fade-up"}
+        data-aos-delay={100}
+        data-aos-duration={700}
+      >
+        <Popup
+          trigger={
+            <button
+              type="submit"
+              name="submit"
+              className="btn btn-color btn-circle"
+              value="Send"
+            >
+              Enviar Mensaje
+            </button>
+          }
+        >
+          <div position="center">
+            {statusMessage}
+          </div>
+        </Popup>
+      </div>
     </form>
   );
 };
