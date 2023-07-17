@@ -8,8 +8,10 @@ import Loader from "./../../components/Loader/Loader";
 import useBodyClass from "../../helpers/useBodyClass";
 import HeaderFour from "../../components/Header/HeaderFour";
 import HeroSliderOne from "../../components/Hero/HeroSliderOne";
+import Welcome from "../../components/WelcomeSection/Welcome";
 import WhoWeAreTwo from "../../components/WhoWeAre/WhoWeAreTwo";
 import WhoWeAreFour from "../../components/WhoWeAre/WhoWeAreFour";
+import OurServicesTwo from "../../components/OurServices/OurServicesTwo";
 import OurTeamTwo from "../../components/Team/OurTeamTwo";
 import TestimonialsOne from "../../components/Testimonials/TestimonialsOne";
 import Resume from "../../components/Resume/Resume";
@@ -29,7 +31,7 @@ const PersonalResume = () => {
   }, []);
   const home = useRef();
   const products = useRef();
-  const team = useRef();
+  const sobreMi = useRef();
   const testimonials = useRef();
   const blog = useRef();
   // const contact = useRef();
@@ -42,8 +44,8 @@ const PersonalResume = () => {
       case "home":
         home.current.scrollIntoView({ behavior: "smooth" });
         break;
-      case "team":
-        team.current.scrollIntoView({ behavior: "smooth" });
+      case "sobreMi":
+        sobreMi.current.scrollIntoView({ behavior: "smooth" });
         break;
       case "products":
         products.current.scrollIntoView({ behavior: "smooth" });
@@ -71,11 +73,13 @@ const PersonalResume = () => {
     <Loader>
       <HeaderFour scrollToSection={scrollToSection} />
       <HeroSliderOne ref={home} scrollToSection={scrollToSection} />
-      <OurTeamTwo
-        title="MEET OUR TEAM"
-        tagline="WE ARE PUR"
-        ref={team}
-      />
+      <Welcome
+        title="Soy Felicitas Ruiz"
+        tagline="Experimenta un poco sobre mi"
+        scrollToSection={scrollToSection}
+        ref={sobreMi}
+      ></Welcome>
+      <OurServicesTwo />
       <Portfolio
         columns="3"
         layout="wide"

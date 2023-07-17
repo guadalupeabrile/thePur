@@ -2,7 +2,7 @@ import React from "react";
 import serviceImg from "../../assets/images/startup-bg-right.jpg";
 
 const OurServicesTwo = ({ title, tagline }) => (
-  <section className="white-bg">
+  <section >
     <div className="col-md-6 col-sm-4 bg-flex bg-flex-right">
       <div
         className="bg-flex-holder bg-flex-cover"
@@ -52,7 +52,7 @@ const OurServicesTwo = ({ title, tagline }) => (
             href={`${process.env.PUBLIC_URL}/service-simple`}
             className="btn btn-color btn-circle"
           >
-            Read More
+            Contactame!
           </a>
         </p>
       </div>

@@ -293,7 +293,7 @@ input[type="color"]:focus,
 
 section {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   position: relative;
   z-index: 10;
   background: #f5f7fd;

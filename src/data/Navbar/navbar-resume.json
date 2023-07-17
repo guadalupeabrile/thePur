@@ -6,12 +6,12 @@
   },
   {
     "id": 2,
-    "title": "Our Team",
-    "link": "team"
+    "title": "Sobre Felicitas",
+    "link": "sobreMi"
   },
   {
     "id": 3,
-    "title": "Productos",
+    "title": "Servicios",
     "link": "products"
   },
   {
@@ -21,7 +21,12 @@
   },
   {
     "id": 5,
-    "title": "Testimonials",
+    "title": "Testimonios",
     "link": "testimonials"
+  },
+  {
+    "id": 6,
+    "title": "Contactame",
+    "link": "contact"
   }
 ]
