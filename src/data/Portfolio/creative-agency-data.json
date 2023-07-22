@@ -2,19 +2,19 @@
   {
     "id": 1,
     "title": "THE ENERGY BOOSTER",
-    "category": "EXPERIMENTÁ NUESTRAS EXPERIENCIAS DE BIENESTAR",
-    "image": "portfolio/grid/1.jpg",
+    "category": "EXPERIMENTÁ EL CLUB SOCIAL PARA EMPRENDEDORES, NÓMADES DIGITALES Y FREELANCERS",
+    "image": "portfolio/grid/1.png",
     "groups": [
       "all",
       "experiencias"
     ],
-    "links": ""
+    "links": "https://www.instagram.com/thenergybooster/"
   },
   {
     "id": 2,
     "title": "THE PUR SHOP",
-    "category": "EXPERIMENTÁ NUESTROS PRODUCTOS DE BIENESTAR",
-    "image": "portfolio/grid/2.jpg",
+    "category": "EXPERIMENTÁ PRODUCTOS PARA TU BIENESTAR",
+    "image": "portfolio/grid/2.png",
     "groups": [
       "all",
       "shop"
@@ -24,78 +24,45 @@
   {
     "id": 3,
     "title": "FELICITAS RUIZ POSTCAD",
-    "category": "EXPERIMENTÁ NUESTRO POSTCAD EN SPOTIFY",
-    "image": "portfolio/grid/3.jpg",
+    "category": "EXPERIMENTÁ EL POSTCAD DE THE PUR LIFE",
+    "image": "portfolio/grid/3.png",
     "groups": [
       "all",
       "postcad"
     ],
-    "links": [
-      {
-        "id": 1,
-        "icon": "search-1",
-        "link": "!#"
-      },
-      {
-        "id": 2,
-        "icon": "link-alt",
-        "link": "!#"
-      }
-    ]
+    "links": "https://open.spotify.com/show/5y09aGbRzg8JuRlPSKEV5m?si=39b5c6f2486341ca"
   },
   {
     "id": 4,
-    "title": "HEALTH AND LIFE COACHING",
-    "category": "EXPERIMENTÁ MIS SESIONES Y CURSOS DE BIENESTAR Y SALUD",
-    "image": "portfolio/grid/4.jpg",
-    "groups": [
-      "all",
-      "coaching"
-    ],
-    "links": [
-      {
-        "id": 1,
-        "icon": "search-1",
-        "link": "!#"
-      },
-      {
-        "id": 2,
-        "icon": "link-alt",
-        "link": "!#"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "THE SPIRITUAL RAVE",
-    "category": "EXPERIMENTÁ NUESTRAS SESIONES DE DJ",
-    "image": "portfolio/grid/5.jpg",
-    "groups": [
-      "all",
-      "dj"
-    ],
-    "links": ""
-  },
-  {
-    "id": 6,
-    "title": "THE PUR MENU",
-    "category": "EXPERIMENTÁ LA CREACIÓN DEL MENÚ PARA TU RESTAURANTE, RETIRO O CATERING",
-    "image": "portfolio/grid/6.jpg",
+    "title": "MAISON WELLNESS",
+    "category": "EXPERIMENTÁ UN RETIRO DE BIENESTAR Y EXCLUSIVIDAD",
+    "image": "portfolio/grid/4.png",
     "groups": [
       "all",
       "experiencias"
     ],
-    "links": [
-      {
-        "id": 1,
-        "icon": "search-1",
-        "link": "!#"
-      },
-      {
-        "id": 2,
-        "icon": "link-alt",
-        "link": "!#"
-      }
-    ]
+    "links": "https://www.themaisonwellness.com/"
+  },
+  {
+    "id": 5,
+    "title": "HOLISTIC COACHING SESSIONS",
+    "category": "EXPERIMENTÁ SESIONES DE COACHING HOLÍSTICO Y SALUD",
+    "image": "portfolio/grid/5.png",
+    "groups": [
+      "all",
+      "coaching"
+    ],
+    "links": "https://wa.link/05zpid"
+  },
+  {
+    "id": 6,
+    "title": "THE SPIRITUAL RAVE",
+    "category": "EXPERIMENTÁ UNA FIESTA ÚNICA BAILANDO HASTA EL ÉXTASIS",
+    "image": "portfolio/grid/6.png",
+    "groups": [
+      "all",
+      "experiencias"
+    ],
+    "links": "https://www.instagram.com/thespiritualrave/"
   }
 ]

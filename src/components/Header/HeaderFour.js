@@ -38,7 +38,7 @@ const HeaderFour = ({ scrollToSection }) => {
             >
               <Icofont icon="navigation-menu" />
             </button>
-            <MainLogoTwo />
+            <MainLogoTwo /> {/*.logo img en master para dimensiones */}
           </div>
           <div
             className="navbar-collapse collapse"

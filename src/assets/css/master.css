@@ -82,7 +82,7 @@ body {
   color: #888;
   background: #f1f1f1;
   font-size: 15px;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .wrapper {
@@ -360,13 +360,13 @@ nav.navbar.bootsnav.navbar-transparent .logo {
   position: relative;
   z-index: 110;
   display: table;
-  height: 60px;
+  width: 360;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
 .logo img {
-  max-height: 33px;
+  max-height: 90px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   display: block;
