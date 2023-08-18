@@ -39,7 +39,7 @@ const BlogSlider = forwardRef((props, ref) => {
     >
       <div className="container">
         <div className="row">
-          <HeadingSection title="THE PUR BLOG" tagline="Latest News" />
+          <HeadingSection title="BLOG DE FELICITTAS" tagline="Conóceme en profundidad" />
         </div>
         <div className="row mt-50">
           <div className="col-md-12 remove-padding">

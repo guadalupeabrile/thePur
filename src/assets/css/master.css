@@ -82,7 +82,7 @@ body {
   color: #888;
   background: #f1f1f1;
   font-size: 15px;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 
 .wrapper {
@@ -3620,7 +3620,7 @@ img.mfp-img {
 .post-info {
   padding: 40px;
   /* background: #CBC2B1; */
-  background: rgba(203, 194, 177, 0.7);
+  background: rgba(137, 137, 134, 0.616);
   transition: all 0.2s ease;
 }
 
