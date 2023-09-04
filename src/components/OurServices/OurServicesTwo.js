@@ -2,7 +2,7 @@ import React from "react";
 import serviceImg from "../../assets/images/startup-bg-right.jpg";
 
 const OurServicesTwo = ({ title, tagline }) => (
-  <section className="pt-0">
+  <section className="pt-5">
     <div className="col-md-6 col-sm-4 bg-flex bg-flex-right">
       <div
         className="bg-flex-holder bg-flex-cover"
@@ -27,7 +27,7 @@ const OurServicesTwo = ({ title, tagline }) => (
         >
           {tagline}
         </h4>
-        <div data-aos={"fade-up"} data-aos-delay={300} data-aos-duration={1000} className="pt-20">
+        <div data-aos={"fade-up"} data-aos-delay={300} data-aos-duration={1000}>
           <p className="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
             vulputate dolor. Nullam venenatis enim in quam euismod fringilla.
