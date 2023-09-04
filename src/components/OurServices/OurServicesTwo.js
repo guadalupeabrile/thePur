@@ -2,7 +2,7 @@ import React from "react";
 import serviceImg from "../../assets/images/startup-bg-right.jpg";
 
 const OurServicesTwo = ({ title, tagline }) => (
-  <section >
+  <section className="pt-0">
     <div className="col-md-6 col-sm-4 bg-flex bg-flex-right">
       <div
         className="bg-flex-holder bg-flex-cover"
