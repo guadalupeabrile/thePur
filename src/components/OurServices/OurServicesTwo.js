@@ -28,7 +28,7 @@ const OurServicesTwo = ({ title, tagline }) => (
           {tagline}
         </h4>
         <div data-aos={"fade-up"} data-aos-delay={300} data-aos-duration={1000}>
-          <p className="mt-20">
+          <p className="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
             vulputate dolor. Nullam venenatis enim in quam euismod fringilla.
             Donec in risus eget purus mattis varius. Nulla dapibus quis orci et
