@@ -5,7 +5,7 @@ const PortfolioFilter = ({ categories, handleClick }) => (
     id="portfolio-filter"
     className="list-inline filter-transparent"
     data-wow-delay="0.1s"
-    className="pt-5"
+    className=""
 
   >
     {categories.map((cat, i) =>
