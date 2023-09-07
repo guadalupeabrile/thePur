@@ -80,7 +80,7 @@ const PersonalResume = () => {
         scrollToSection={scrollToSection}
         ref={sobreMi}
       ></Welcome>
-      <OurServicesTwo />
+      <OurServicesTwo scrollToSection={scrollToSection} />
       <Portfolio
         title="Experimentá las Creaciones de Felicitas"
         tagline="Un Boost para tu vida o proyecto"
