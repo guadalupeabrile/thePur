@@ -55,7 +55,10 @@ const HeaderFour = ({ scrollToSection }) => {
                 <li key={item.id} >
                   <a
                     href={process.env.PUBLIC_URL + item.link}
-                    onClick={(e) => scrollToSection(e, item.link)}
+                    onClick={(e) => {
+                      scrollToSection(e, item.link);
+                      showMenu()
+                    }}
                   >
                     <i className="fa fa-home"></i> {item.title}
                   </a>
