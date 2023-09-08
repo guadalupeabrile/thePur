@@ -6,7 +6,7 @@ import Scrollspy from "react-scrollspy";
 
 const HeroSliderOne = forwardRef((props, ref) => {
 
-  const tags = ["HELLO", "I'M", "FELICITAS", "RUIZ"];
+  const tags = ["EXPERIMENTÁ", "GOZÁ", "BAILÁ", "EXPRÉSATE"];
 
   return (
     <section className="pt-0 pb-0" id="home" ref={ref}>
